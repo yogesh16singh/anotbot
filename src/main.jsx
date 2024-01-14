@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import './App.css';
 
@@ -8,7 +7,6 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.css"
 import "bootstrap/dist/js/bootstrap.bundle"
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Header from './common/Header';
 import SignIn from './pages/SignIn';
 import Dashboard from './pages/Dashboard';
 import DatePolls from './pages/DatePolls';
@@ -42,5 +40,5 @@ let router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
+  </React.StrictMode>
 )
